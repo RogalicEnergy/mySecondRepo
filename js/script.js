@@ -1,30 +1,70 @@
 'use strict';
 
-const h1 = document.getElementsByTagName('h1');
-const handlerBtn = document.getElementsByClassName('handler_btn');
-const screenBtn = document.querySelector('.screen-btn');
-const  otherItems1 = document.querySelectorAll('.other-items.percent');
-const  otherItems2 = document.querySelectorAll('.other-items.number');
-const input = document.querySelector('.rollback input');
-const span = document.querySelector('.rollback span');
-let screen = document.querySelectorAll('.screen');
-const calculate = handlerBtn[0];
-const reset = handlerBtn[1];
+const listsBooks = document.querySelectorAll('.books');
+const listBook = document.querySelectorAll('.book');
+const h2 = document.querySelectorAll('h2');
+const adv = document.querySelectorAll('.adv');
+const item = document.querySelectorAll('ul');
+const list = document.querySelectorAll('li');
 
-Array.from(document.getElementsByClassName('total-input')).forEach(el => {
-  console.log(el)
-});
 
-console.log(h1[0]);
-console.log(calculate);
-console.log(reset);
-console.log(screenBtn);
-console.log(otherItems1);
-console.log(otherItems2);
-console.log(input);
-console.log(span);
-console.log(screen);
 
+listsBooks[0].prepend(listBook[1])
+listsBooks[0].append(listBook[2])
+listBook[3].before(listBook[4])
+
+document.body.style.backgroundImage = "url('./image/you-dont-know-js.jpg')";
+
+
+h2[4].innerHTML = '<span style = "font-weight: normal; color: darkkhaki">Книга 3. this и <strong>Прототипы</strong> Объектов</span>'
+
+adv[0].remove()
+
+list[3].after(list[6])
+list[6].after(list[8])
+list[10].before(list[2])
+list[9].before(list[7])
+
+
+list[47].after(list[55])
+list[55].after(list[49])
+list[48].before(list[50])
+list[48].after(list[52])
+list[52].after(list[53])
+
+
+const cloneElm = list[25].cloneNode(true)
+cloneElm.innerHTML = '<strong>Глава 8: За пределами ES6</strong> '
+item[2].append(cloneElm)
+item[2].append(list[26])
+
+
+
+
+// const h1 = document.getElementsByTagName('h1');
+// const handlerBtn = document.getElementsByClassName('handler_btn');
+// const screenBtn = document.querySelector('.screen-btn');
+// const  otherItems1 = document.querySelectorAll('.other-items.percent');
+// const  otherItems2 = document.querySelectorAll('.other-items.number');
+// const input = document.querySelector('.rollback input');
+// const span = document.querySelector('.rollback span');
+// let screen = document.querySelectorAll('.screen');
+// const calculate = handlerBtn[0];
+// const reset = handlerBtn[1];
+
+// Array.from(document.getElementsByClassName('total-input')).forEach(el => {
+//   console.log(el)
+// });
+
+// console.log(h1[0]);
+// console.log(calculate);
+// console.log(reset);
+// console.log(screenBtn);
+// console.log(otherItems1);
+// console.log(otherItems2);
+// console.log(input);
+// console.log(span);
+// console.log(screen);
 
 // const appData = {
 //   title: '',
