@@ -16,7 +16,7 @@ listBook[3].before(listBook[4])
 document.body.style.backgroundImage = "url('./image/you-dont-know-js.jpg')";
 
 
-h2[4].innerHTML = '<span style = "font-weight: normal; color: darkkhaki">Книга 3. this и <strong>Прототипы</strong> Объектов</span>'
+h2.a[4].innerHTML = '<span style = "font-weight: normal; color: darkkhaki">Книга 3. this и <strong>Прототипы</strong> Объектов</span>'
 
 adv[0].remove()
 
