@@ -1,6 +1,6 @@
 'use strict';
 
-const h1 = document.getElementsByTagName('h1');
+const h1 = document.getElementsByTagName('h1')[0];
 const handlerBtn = document.getElementsByClassName('handler_btn');
 const screenBtn = document.querySelector('.screen-btn');
 const  otherItems1 = document.querySelectorAll('.other-items.percent');
@@ -11,11 +11,14 @@ let screen = document.querySelectorAll('.screen');
 const calculate = handlerBtn[0];
 const reset = handlerBtn[1];
 
-Array.from(document.getElementsByClassName('total-input')).forEach(el => {
-  console.log(el)
-});
+const totalInputs = document.getElementsByClassName('total-input');
+const input1 = totalInputs[0]
+const input2 = totalInputs[1]
+const input3 = totalInputs[2]
+const input4 = totalInputs[3]
+const input5 = totalInputs[4]
 
-console.log(h1[0]);
+console.log(h1);
 console.log(calculate);
 console.log(reset);
 console.log(screenBtn);
@@ -23,6 +26,11 @@ console.log(otherItems1);
 console.log(otherItems2);
 console.log(input);
 console.log(span);
+console.log(input1);
+console.log(input2);
+console.log(input3);
+console.log(input4);
+console.log(input5);
 console.log(screen);
 
 
