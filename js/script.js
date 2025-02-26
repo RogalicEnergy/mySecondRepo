@@ -36,9 +36,28 @@ const appData = {
   init: function() {
     appData.addTitle()
 
-    calculate.addEventListener('click', appData.start)
+    calculate.addEventListener('click', appData.checkError)
     screenBtn.addEventListener('click', appData.addScreenBlock)
     input.addEventListener('input', appData.addRollback);
+  },
+
+  checkError: function () {
+    screens = document.querySelectorAll('.screen');
+
+    appData.isError = false
+
+    screens.forEach(function(screen) {
+      const select = screen.querySelector('select')
+      const input = screen.querySelector('input')
+
+      if (select.value === '' || input.value === '') {
+        appData.isError = true;
+      }
+      });
+
+      if (!appData.isError) {
+        appData.start();
+      }
   },
 
   start: function() {
@@ -71,9 +90,6 @@ const appData = {
     screens.forEach(function(screen, index) {
       const select = screen.querySelector('select')
       const input = screen.querySelector('input')
-        if (select.value.length === 0 || input.value.length === 0) {
-          alert('Выберите значение!')
-        }
       const selectName = select.options[select.selectedIndex].textContent
 
       
