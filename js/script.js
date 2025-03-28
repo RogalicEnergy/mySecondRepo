@@ -73,7 +73,6 @@ const appData = {
   },
 
   blockingSelect: function () {
-    // Блокируем select, input и кнопку plus при нажатии кнопки рассчитать
     const select = document.querySelectorAll('select');
     const input = document.querySelectorAll('.screen input[type="text"]');
 
